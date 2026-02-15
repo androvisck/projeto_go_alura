@@ -12,3 +12,5 @@ cd:
 	scp -i "~/.ssh/curso-cd-aws.pem" $(CURDIR)/main ec2-user@ec2-54-160-106-151.compute-1.amazonaws.com:/home/ec2-user
 	# Servidor de Prod
 	# ENV ./main
+close:
+	docker compose down
